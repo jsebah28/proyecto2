@@ -1,0 +1,165 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- WebPage Font Rubik Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- WebPage Font Rubik Link -->
+    <!-- WebPage Icons Link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- WebPage Icons Link -->
+    <title>Los Moviles</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <li><a href="index.html"><img src="./img/logo.png" alt="los moviles"></a></li>
+            </div>
+            <div class="menu-links">
+                <a href="#">Productos</a>
+                <a href="#">Ventajas</a>
+                <a href="#">Nuestro equipo</a>
+                <a href="#">Preguntas</a>
+            </div> 
+            <div class="social-media">
+                <a href="https://www.facebook.com/losmoviles"><img src="./img/facebook-icon.png" alt=""></a>
+                <a href="https://www.instagram.com/losmoviles/"><img src="./img/instagram-icon.png" alt=""></a>
+            </div>
+            <div>
+                <a href="#" class="contact-us-button">Contactanos</a>
+            </div>
+        </nav>
+    </header>
+   
+
+    <div class="carrousel">
+        <div class="main-text">
+            <h1>Te alquilamos nuestra plataforma de <mark>recepción</mark> y <mark>despacho</mark> de servicios de transporte</h1>
+        </div>
+        <div class="phone-mockup">
+            <div id="driver_mockup"><img src="./img/driver app mockup.png" alt="app conductor los moviles"></div>
+            <div id="user_mockup" style="display: none;"><img src="./img/user_app_mockup.png" alt="app conductor los moviles"></div>
+            <div id="whatsapp_mockup" style="display: none;"><img src="./img/whatsapp_mockup.png" alt="app conductor los moviles"></div>
+            <div id="call_mockup" style="display: none;"><img src="./img/callcenter_mockup.png" alt="app conductor los moviles"></div>
+        </div>
+        <div class="title-description-background">
+            <h1 class="title-description-background-1"><mark  id="title_mockup">Conductor</mark></h1>
+            <h2 id="description">Recibe las peticiones más cercanas  gracias a nuestros mapas personalizados</h2>
+            <a onclick="showUserApp();" class="main-button-style" id="next_buttom_1">Siguiente</a>
+            <a onclick="showWhatsapp();" class="main-button-style" id="next_buttom_2">Siguiente</a>
+            <a onclick="showCallCenter();" class="main-button-style" id="next_buttom_3">Siguiente</a>
+            <a onclick="showDriverApp();" class="main-button-style" id="next_buttom_4">Siguiente</a>
+        </div>
+    </div>
+
+    <h1 class="our-advantages-title">Nuestras ventajas</h1>
+
+    <div class="advantages">
+        <div class="advantages-1">
+            <h2><mark>Agilizamos procesos</mark></h2> 
+            <img src="./img/robot-hand.gif" alt="automatizamos procesos">
+            <p>Movimientos contables y administrativos <br> Recepción y despacho de servicios</p>
+        </div>
+        <div class="advantages-1">
+            <h2><mark>Nos adaptamos a tus necesidades</mark></h2>
+            <img src="./img/puzzle.gif" alt="automatizamos procesos">
+            <p>Nuestro sistema flexible permite acondicionar la plataforma a las necesidades de tu mercado</p>
+        </div>
+        <div class="advantages-1">
+            <h2><mark>Disminuimos costos operativos</mark></h2> 
+            <img src="./img/ahorrar.gif" alt="automatizamos procesos">
+            <p>Un sistema complementado con agentes virtuales</p>
+        </div>
+        <div class="advantages-1">
+            <h2><mark>Seguimiento desde cualquier dispositivo</mark></h2> 
+            <img src="./img/devices.gif" alt="automatizamos procesos">
+            <p>Acceso remoto a través de internet a las plataformas y todos los módulos para tener un mejor control en tiempo real</p>
+        </div>
+    </div>
+
+    <div class="advantages-web">
+        <div class="advantages-1-web">
+            <div>
+                <h2><mark>Agilizamos procesos</mark></h2> 
+                <img src="./img/robot-hand.gif" alt="automatizamos procesos">
+                <p>Movimientos contables y administrativos <br> Recepción y despacho de servicios</p>
+            </div>
+        </div>
+        <div class="advantages-1-web">
+            <div>
+                <h2><mark>Nos adaptamos a tus necesidades</mark></h2>
+                <img src="./img/puzzle.gif" alt="automatizamos procesos">
+                <p>Nuestro sistema flexible permite acondicionar la plataforma a las necesidades de tu mercado</p>
+            </div>
+        </div>
+        <div class="advantages-1-web">
+            <div>
+                <h2><mark>Disminuimos costos operativos</mark></h2> 
+                <img src="./img/ahorrar.gif" alt="automatizamos procesos">
+                <p>Un sistema complementado con agentes virtuales</p>
+            </div>
+        </div>
+        <div class="advantages-1-web">
+            <div>
+                <h2><mark>Seguimiento desde cualquier dispositivo</mark></h2> 
+                <img src="./img/devices.gif" alt="automatizamos procesos">
+                <p>Acceso remoto a través de internet a las plataformas y todos los módulos para tener un mejor control en tiempo real</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="driver-app">
+        <div>
+          <h1>App Conductor</h1>
+          <p>Características y funciones:</p><br>
+            <ul  class="driver-app-features">
+                <li><p>Puedes implementar pagos desde la app</p></li><br>
+                <li><p>Con mapas personalizados de tu ciudad</p></li><br>
+                <li><p>Zonas de tu ciudad ordenadas por demanda de servicios</p></li><br>
+                <li><p>Registra vales electrónicos manualmente</p></li><br>
+            </ul>
+        </div>
+        <div><img src="./img/hand-driver-app.png" alt=""></div>
+    </section>
+
+    <br>
+
+    <h1 class="our-advantages-title">Nuestro equipo humano</h1>
+    <div class="our-team">
+        <div class="team-photo"><img src="./img/team.png" alt=""></div>
+        <h2><mark>Los Móviles </mark> está conformado por un equipo humano altamente calificado que garantiza el óptimo funcionamiento de nuestra plataforma en todo momento.</h2>
+    </div>
+
+    <br><br>
+    <h1 class="our-advantages-title"><mark>Haz parte de esta alianza</mark></h1>
+
+    <div class="our-aliance">
+        <h2>Evolucionemos a las nuevas tecnologías y afrontemos juntos los retos que nos trae el mercado.</h2>
+        <div class="aliance-photo"><img src="./img/world.png" alt=""></div>
+    </div>
+
+    <br>
+    <h1 class="our-advantages-title">Preguntas frecuentes</h1>
+    <div class="questions">
+        
+        <ul class="question-list">
+            <li><h2>¿Son una empresa legal?:</h2></li>
+            <p>Somos Radio Taxis Libres, empresa de transporte líder en el mercado Colombiano</p>
+            <br>
+            <li><h2>¿Cuánto se demora el proceso para empezar a trabajar?:</h2></li>
+            <p>Aproximadamente 2 meses, dependiendo del tamaño de tu empresa</p>
+            <br>
+            <li><h2>¿Cuál es el limite de vehículos para trabajar en la plataforma?</h2></li>
+            <p>Actualmente nuestra plataforma trabaja exitosamente con 5.000 vehículos registrados</p>
+        </ul>
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+</html>

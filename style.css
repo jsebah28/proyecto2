@@ -1,0 +1,397 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* #next_buttom_2, #next_buttom_3, #next_buttom_4{
+    display: none;
+} */
+
+html{
+    background-color: #012846;
+    overflow-x: hidden;
+    font-family: 'Rubik';
+    list-style: none;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 90vw;
+    justify-content: center;
+}
+
+h1, h2, h3, p{
+    color: #FAFAFA;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #FAFAFA;
+    
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: #011F36;
+    list-style: none;
+    padding: 1rem;
+}
+
+.logo img{
+    width: 80%;
+}
+
+.menu-links, .social-media{
+    display: none;
+}
+
+
+.contact-us-button{
+    box-shadow:inset 0px 3px 25px -2px #E48912;
+    background-color: #E48912;
+    color: #FAFAFA;
+    cursor: pointer;
+    font-family: 'Rubik';
+    border-radius: 2em;
+    border: none;
+    padding: 0.6rem 1rem;
+    font-weight: 500;
+}
+
+.main-button-style{
+    box-shadow:inset 0px 3px 25px -2px #044fa0;
+	background-color:#011f36;
+	border-radius: 2rem;
+	border:0.1rem solid #8ec5ff;
+	cursor: pointer;
+	color:#ffffff;
+	font-size: 0.8rem;
+	padding: 0.5rem 1rem;
+	text-shadow:0px 1px 0px #ffffff;
+    width: fit-content;
+}
+
+
+
+.carrousel {
+    background-image: url(./img/road-background.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.main-text {
+    grid-column: 1/3;
+    text-align: center;
+    font-size: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.title-description-background, h1, h2{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.title-description-background h2{
+    font-size: 1rem;
+}
+
+.title-description-background{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}
+
+
+h1 {
+    font-weight: 300;
+}
+
+.phone-mockup img{
+    position: relative;
+    left: -2vh;
+    width: 150px;
+}
+
+mark{
+    background-color: rgba(240, 248, 255, 0);
+    font-weight: 500;
+    color: #8DECFF;
+}
+
+.advantages {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    padding: 0.5rem;
+}
+
+.advantages-web {
+   display: none;
+}
+
+.advantages-1 img{
+    width: 100%;
+}
+
+.advantages-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.advantages-1 h2{
+    grid-column: 1/3;
+}
+
+.our-advantages-title{
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.driver-app{
+    display: none;
+}
+
+.our-team, .our-aliance{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    row-gap: 1rem;
+    justify-content: center;
+    
+}
+
+.our-team img{
+    width: 90vw;
+}
+
+
+.questions {
+    margin: 1rem;
+}
+
+.questions h2{
+    color: #96A2AB;
+    background-color:#011f36;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    
+}
+
+.question-text{
+    display: grid;
+    grid-template-columns: 2fr;
+}
+.question-list{
+    padding: 0.5rem;
+}
+
+ul.question-list{
+    list-style-image: url(./img/bullet-point.png);
+}
+
+.icons {
+    color: #FDBF00;
+}
+
+@media only screen and (min-width: 992px) {
+    h1{
+        font-size: 2rem;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: 15% 55% 10% 20%;
+        justify-items: center;
+        align-items: center;
+        background-color: #011F36;
+        padding: 1rem;
+    }
+
+    .menu-links, .social-media{
+        display: grid;
+    }
+
+    .menu-links{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: start;
+        column-gap: 3rem;
+    }
+
+    .carrousel {
+        background-image: url(./img/road-background.svg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 30% 30% 40%;
+        padding: 1rem;
+    }
+
+    .phone-mockup img{
+        position: relative;
+        left: -2vh;
+        width: 50vh;
+    }
+
+    .main-text {
+        grid-column: 1/2;
+        text-align: left;
+        font-size: 0.5rem;
+        margin-left: 2rem;
+    }
+
+    .social-media {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        align-items: center;
+    }
+
+    .social-media img{
+        height: 1.5rem;
+    }
+
+    .menu-links{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: start;
+        column-gap: 4rem;
+    }
+    
+    .title-description-background h2{
+        font-size: 1.5rem;
+    }
+
+    .advantages{
+        display: none;
+    }
+    
+    .advantages-web{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 34rem;
+        column-gap: 1rem;
+        justify-content: center;
+    }
+
+    .advantages-web, h1, h2{
+        font-size: 1.5rem;
+    }
+
+    .advantages-1-web img{
+        width: 80%;
+    }
+
+    .advantages-1-web {
+        display: grid;
+        grid-template-columns: 1fr;
+       text-align: center;
+       
+        
+    }
+    .advantages-1-web div{
+        display: grid;
+        height: 30rem;
+        box-shadow:inset 0px 3px 25px -2px #044fa0;
+        background-color:#012846;
+        border-radius: 1rem;
+        border:0.1rem solid #8ec5ff;
+        align-items: center;
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .our-advantages-title{
+        font-size: 3rem;
+        font-weight: 500;
+        padding: 1rem 2rem;
+        text-align: left;
+    }
+    
+
+      
+    
+    .advantages-1-web:nth-child(1){
+        align-content: end;
+    }
+    
+    .advantages-1-web:nth-child(2){
+        align-content: start;
+    }
+    
+    .advantages-1-web:nth-child(3){
+        align-content: end;
+    }
+    
+    .advantages-1-web:nth-child(4){
+        align-content: start;
+    }
+    
+    .advantages-1-web:nth-child(3) img{
+        height: 11rem;
+    }
+
+    .our-team, .our-aliance{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team-photo img {   
+        width: 50vw;
+    }
+
+    .driver-app{
+        margin-top: 1rem;
+        height: 35rem;
+        background-image: url(./img/road-background.svg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: right;
+        padding: 1rem 3rem;
+    }
+
+    .driver-app h1{
+        font-size: 4rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
+    .driver-app p{
+        font-size: 1.5rem;
+    }
+
+    .driver-app img{
+        width: 32rem;
+    }
+    
+    .driver-app-features {
+        list-style-image: url(./img/bullet-point.png);
+    }
+}
+
